@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms Demo</title>
   </head>
+
   <body>
     <h1>Forms Demo</h1>
+
     <form action="/tacos">
       <p>
         <label for="username">Enter a Username: </label>
@@ -42,23 +44,52 @@
       <button>Submit</button>
     </form>
     <hr />
+
     <form action="https://www.reddit.com/search">
       <h1>Reddit Search</h1>
       <input type="text" name="q" />
       <button>Search Reddit</button>
     </form>
     <hr />
+
     <form action="https://www.google.com/search">
       <h1>Google Search</h1>
       <input type="text" name="q" />
       <button>Search Google</button>
     </form>
     <hr />
+
     <form action="https://www.youtube.com/results">
       <h1>Youtube Search</h1>
       <input type="text" name="search_query" />
       <button>Search Youtube</button>
     </form>
     <hr />
+
+    <h1>More Inputs</h1>
+
+    <form action="/birds">
+      <input type="checkbox" name="agree_tos" id="agree" checked />
+      <label for="agree">I agree to the terms of service</label>
+      <p>
+        <label for="small">Small: </label>
+        <input type="radio" name="size" id="small" value="small" />
+        <label for="medium">Medium: </label>
+        <input type="radio" name="size" id="medium" value="medium" />
+        <label for="large">Large: </label>
+        <input type="radio" name="size" id="large" value="large" />
+      </p>
+
+      <p>
+        <label for="meal">Please Select an Entree</label>
+        <select name="meal" id="meal">
+          <option value="">-- Please Selection an Option --</option>
+          <option value="fish">Fish</option>
+          <option value="veg">Vegetarian</option>
+          <option value="steak">Steak</option>
+        </select>
+      </p>
+      <button>Submit</button>
+    </form>
   </body>
 </html>
